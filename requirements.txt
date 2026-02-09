@@ -1,7 +1,8 @@
 fastapi
 uvicorn
-sqlalchemy
+SQLAlchemy
 psycopg2-binary
+PyJWT
+email-validator
 passlib[bcrypt]
 bcrypt==4.0.1
-PyJWT
