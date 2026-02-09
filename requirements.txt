@@ -1,4 +1,6 @@
 fastapi
 uvicorn
-passlib[bcrypt]==1.7.4
-bcrypt==3.2.2
+sqlalchemy
+psycopg2-binary
+passlib[bcrypt]
+python-jose[cryptography]
