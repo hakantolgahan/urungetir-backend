@@ -92,8 +92,9 @@ class AuthResponse(BaseModel):
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
 
-def verify_password(password: str, password_hash: str) -> bool:
-    return pwd_context.verify(password, password_hash)
+def hash_password(password: str) -> str:
+    password = password[:72]  # bcrypt limiti
+    return pwd_context.hash(password)
 
 def create_token(email: str) -> str:
     payload = {
